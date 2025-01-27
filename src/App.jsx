@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Variation, NavBar } from "./components/NavBar";
 import { Face } from "./components/Face";
 import "./App.css";
+import "./style.css";
 function App() {
   const [namePage, setNamePage] = useState("civil_state");
   let backIm = "assets/" + namePage + ".png";

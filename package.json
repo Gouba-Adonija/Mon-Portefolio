@@ -1,7 +1,7 @@
 {
   "name": "Mon-portefolio",
-  "homepage": "https://Gouba-Adonija.github.io/mon-site/",
-  "private": true,
+  "homepage": "https://gouba-adonija.github.io/Mon-Portefolio/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
