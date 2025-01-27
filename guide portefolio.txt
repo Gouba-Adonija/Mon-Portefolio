@@ -1,0 +1,9 @@
+technologies : react : Pour les interactions et effets 
+		Json : bases de données et logiques "comment garantir la sécurité des données?"
+
+structure : SinglePage et Page PDF
+ buttons :  CV | Parcours, Motivation, Competences, Langues
+  Photo, nom et prénom et fonction | (variations )
+ 
+
+ theme : dark et fire

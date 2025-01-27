@@ -1,0 +1,70 @@
+/* Applique un fond sombre à toute la page */
+.app-container {
+  background-color: #121212; /* Fond sombre général */
+  color: white;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+/* Style de la Navbar */
+.navbar {
+  background-color: #2e2e2e; /* Un gris foncé */
+  border-bottom: 2px solid #ff6f61; /* Accent orange chaud */
+}
+
+.navbar a,
+.navbar button {
+  color: #fff; /* Texte de la navbar en couleur orange */
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  background-color: #ff6f61; /* Effet hover orange */
+  color: white;
+}
+
+.navbar button {
+  border: 1px solid #ff6f61; /* Bordure orange clair */
+}
+
+/* Conteneur principal, avec deux sections côte à côte */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: calc(100vh - 60px); /* La navbar en haut occupe 60px */
+}
+
+/* Section de gauche pour le contenu variable */
+.left-section {
+  flex: 3; /* Prend plus de place que la section droite */
+  background-color: #1a1a1a; /* Fond plus sombre pour la section gauche */
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px; /* Espacement entre les sections */
+}
+
+/* Section de droite pour le composant Face */
+.right-section {
+  flex: 1;
+  background-color: #333333; /* Fond sombre pour la section droite */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Légère ombre pour effet 3D */
+}
+
+button,
+.btn {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #e35d50;
+}
