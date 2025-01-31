@@ -91,7 +91,7 @@ export function Variation({ namePage }) {
         <CSSTransition
           key={namePage}
           classNames="fade"
-          timeout={500}
+          timeout={200}
           unmountOnExit
         >
           <CurrentPage />

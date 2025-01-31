@@ -64,6 +64,9 @@ export function Resume() {
 
   return (
     <div className="d-flex justify-content-center align-items-center flex-column gap-2">
+      <div className="titre">
+        <h3 className="">A propos de moi</h3>
+      </div>
       <div className="fs-6">{pages[currentPage]}</div>
       <div className="pagination-controls text-end">
         <span>

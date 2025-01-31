@@ -1,6 +1,9 @@
 export function Parcours() {
   return (
-    <div className="parcours">
+    <div className="parcours d-flex justify-content-center align-items-center flex-column gap-2">
+      <div className="titre">
+        <h3 className="">Mon parcours scolaire</h3>
+      </div>
       <ul className="">
         <li className="mb-3">
           <div className="fs-6 d-flex align-items-center">
