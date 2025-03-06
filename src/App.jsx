@@ -5,7 +5,9 @@ import "./App.css";
 import "./style.css";
 function App() {
   const [namePage, setNamePage] = useState("resume");
+
   let backIm = "assets/" + namePage + ".png";
+
   const bgP = namePage === "competences" ? "105% 50%" : "center";
 
   return (
