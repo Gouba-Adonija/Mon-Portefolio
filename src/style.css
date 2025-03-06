@@ -1,6 +1,5 @@
-/* Applique un fond sombre à toute la page */
 .app-container {
-  background-color: #121212; /* Fond sombre général */
+  background-color: #121212;
   color: white;
   height: 100vh;
   font-family: "Arial", sans-serif;
@@ -8,23 +7,23 @@
 
 /* Style de la Navbar */
 .navbar {
-  background-color: #2e2e2e; /* Un gris foncé */
-  border-bottom: 2px solid #ff6f61; /* Accent orange chaud */
+  background-color: #2e2e2e;
+  border-bottom: 2px solid #ff6f61;
 }
 
 .navbar a,
 .navbar button {
-  color: #fff; /* Texte de la navbar en couleur orange */
+  color: #fff;
 }
 
 .navbar a:hover,
 .navbar button:hover {
-  background-color: #ff6f61; /* Effet hover orange */
+  background-color: #ff6f61;
   color: white;
 }
 
 .navbar button {
-  border: 1px solid #ff6f61; /* Bordure orange clair */
+  border: 1px solid #ff6f61;
 }
 
 /* Conteneur principal, avec deux sections côte à côte */
@@ -32,39 +31,88 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  height: calc(100vh - 60px); /* La navbar en haut occupe 60px */
+  height: calc(100vh - 60px); /*La navbar en haut occupe 60px*/
 }
 
-/* Section de gauche pour le contenu variable */
-.left-section {
-  flex: 3; /* Prend plus de place que la section droite */
-  background-color: #1a1a1a; /* Fond plus sombre pour la section gauche */
-  padding: 20px;
-  border-radius: 8px;
-  margin-right: 20px; /* Espacement entre les sections */
+.image-container {
+  width: 40%;
+  height: auto;
+  max-height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Section de droite pour le composant Face */
-.right-section {
-  flex: 1;
-  background-color: #333333; /* Fond sombre pour la section droite */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Légère ombre pour effet 3D */
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  object-fit: contain;
+  filter: sepia(100%) saturate(500%) hue-rotate(180deg) !important;
+  background-color: rgba(147, 229, 14, 0.847);
 }
 
-button,
-.btn {
-  background-color: #ff6f61;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+@media (max-width: 768px) {
+  .image {
+    width: 80%;
+    max-width: 400px;
+  }
 }
 
-button:hover,
-.btn:hover {
-  background-color: #e35d50;
+@media (min-width: 768px) {
+  .image {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Nouveauuuuuu */
+
+/* Conteneur de la langue et progress bars */
+.m-auto {
+  margin-left: 20px;
+}
+
+.language {
+  margin-bottom: 20px;
+}
+
+.language label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 200px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.language span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .m-auto {
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }

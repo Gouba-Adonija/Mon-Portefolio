@@ -1,7 +1,8 @@
-import { Resume } from "./variation/Resume";
-import { Competences } from "./variation/Competences";
-import { Langue } from "./variation/Langue";
-import { Parcours } from "./variation/Parcours";
+import PropTypes from "prop-types";
+import { Resume } from "./variation/resume/Resume";
+import { Competences } from "./variation/competences/Competences";
+import { Langue } from "./variation/langue/Langue";
+import { Parcours } from "./variation/parcours/Parcours";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 export function NavBar({ setNamePage, namePage }) {
@@ -10,13 +11,16 @@ export function NavBar({ setNamePage, namePage }) {
     console.log(" err", namePage);
   };
 
+  const toggleOpenCv = () => {
+    console.log("clic cv");
+    const pdfUrl = "/pdf/cv.pdf";
+    window.open(pdfUrl, "_blank");
+  };
+
   return (
     <nav className="w-100 navbar navbar-expand-lg navbar-dark">
       <div className="w-100 d-flex justify-content-between mx-4">
-        <button
-          className="navbar-brand"
-          onClick={() => toggleNamePage("civil")}
-        >
+        <button className="navbar-brand" onClick={toggleOpenCv}>
           Mon CV
         </button>
         <div className="">
@@ -85,18 +89,22 @@ export function Variation({ namePage }) {
   }
 
   return (
-    <div>
-      {/* Transition entre les pages */}
-      <TransitionGroup>
-        <CSSTransition
-          key={namePage}
-          classNames="fade"
-          timeout={200}
-          unmountOnExit
-        >
-          <CurrentPage />
-        </CSSTransition>
-      </TransitionGroup>
-    </div>
+    <TransitionGroup>
+      <CSSTransition
+        key={namePage}
+        classNames="fade"
+        timeout={200}
+        unmountOnExit
+      >
+        <CurrentPage />
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
+Variation.propTypes = {
+  namePage: PropTypes.string.isRequired,
+};
+NavBar.propTypes = {
+  setNamePage: PropTypes.func.isRequired,
+  namePage: PropTypes.string.isRequired,
+};

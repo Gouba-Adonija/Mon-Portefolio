@@ -1,8 +1,9 @@
 import { useState } from "react";
+import "./resume.css";
 
 export function Resume() {
   const pages = [
-    <div>
+    <div key={1}>
       <p>Bonjour,</p>
       <p>
         Développeur Fullstack passionné, je suis spécialisé dans la création
@@ -20,8 +21,8 @@ export function Resume() {
       </p>
     </div>,
     // Page 3
-    <div>
-      <p className="section fs-6 bg-warning-subtle d-inline-block">
+    <div key={2}>
+      <p className="section fs-6 bg-warning-subtle d-inline-block mt-4">
         Front-End avec React.js
       </p>
       <br />
@@ -31,7 +32,7 @@ export function Resume() {
         capable de concevoir des applications web dynamiques, réactives et
         performantes.
       </p>
-      <p className="section fs-6 bg-warning-subtle d-inline-block">
+      <p className="section fs-6 bg-warning-subtle d-inline-block mt-4">
         Back-End avec Node.js & Laravel
       </p>
       <br />
@@ -63,12 +64,12 @@ export function Resume() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center flex-column gap-2">
+    <div className="w-100 d-flex justify-content-center align-items-center flex-column">
       <div className="titre">
-        <h3 className="">A propos de moi</h3>
+        <h4 className="">A propos de moi</h4>
       </div>
-      <div className="fs-6">{pages[currentPage]}</div>
-      <div className="pagination-controls text-end">
+      <div className="fs-6 ">{pages[currentPage]}</div>
+      <div className="pagination-controls">
         <span>
           Page {currentPage + 1} / {pages.length}
         </span>

@@ -119,8 +119,6 @@ button:hover,
 
 .titre {
   display: block;
-  width: inherit;
-  /* right: 35%; */
   background-color: #aaa;
   color: whitesmoke;
   box-shadow: 0px 0px 10px 3px grey;
@@ -197,9 +195,6 @@ li {
 /* Langue */
 .language-skills {
   font-family: Arial, sans-serif;
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .language {
@@ -239,6 +234,11 @@ p i {
 .fa-solid,
 .fa-brands,
 .fa-regular {
-  font-size: 16px;
+  font-size: 18px;
+  margin: 2px;
+  margin-right: 5px;
   color: rgb(221, 11, 11);
 }
+
+/* RESPONSIVE */
+/* max-width : 1444px */
