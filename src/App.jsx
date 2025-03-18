@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Variation, NavBar } from "./components/NavBar";
 import { Face } from "./components/Face";
 import "./App.css";
@@ -11,7 +12,7 @@ function App() {
   const bgP = namePage === "competences" ? "105% 50%" : "center";
 
   return (
-    <div className="app-container" style={{ fontFamily: "Verdana" }}>
+    <motion.div className="app-container" style={{ fontFamily: "Verdana" }}>
       <NavBar setNamePage={setNamePage} namePage={namePage} />
 
       <div className="main-content d-flex">
@@ -31,7 +32,7 @@ function App() {
           <Variation namePage={namePage} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
