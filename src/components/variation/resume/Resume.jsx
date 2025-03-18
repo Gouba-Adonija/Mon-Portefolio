@@ -22,7 +22,7 @@ export function Resume() {
     </div>,
     // Page 3
     <div key={2}>
-      <p className="section fs-6 bg-warning-subtle d-inline-block mt-4">
+      <p className="section fs-6 bg-danger-subtle d-inline-block mt-4">
         Front-End avec React.js
       </p>
       <br />
@@ -32,7 +32,7 @@ export function Resume() {
         capable de concevoir des applications web dynamiques, réactives et
         performantes.
       </p>
-      <p className="section fs-6 bg-warning-subtle d-inline-block mt-4">
+      <p className="section fs-6 bg-danger-subtle d-inline-block mt-4">
         Back-End avec Node.js & Laravel
       </p>
       <br />

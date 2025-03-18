@@ -10,7 +10,7 @@ export function Competences() {
           intuituves et adaptatives
         </p>
         <div>
-          <p className="section fs-6 bg-warning-subtle d-inline-block">
+          <p className="section fs-6 bg-danger-subtle d-inline-block">
             Front-End
           </p>
           <p>
@@ -19,7 +19,7 @@ export function Competences() {
           </p>
         </div>
         <div>
-          <p className="section fs-6 bg-warning-subtle d-inline-block">
+          <p className="section fs-6 bg-danger-subtle d-inline-block">
             Back-End
           </p>
           <p>
@@ -33,7 +33,7 @@ export function Competences() {
           </p>
         </div>
         <div className="">
-          <p className="section fs-6 bg-warning-subtle d-inline-block">
+          <p className="section fs-6 bg-danger-subtle d-inline-block">
             Autres compétences
           </p>
           <p>

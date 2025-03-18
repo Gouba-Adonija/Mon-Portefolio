@@ -13,7 +13,7 @@ export function NavBar({ setNamePage, namePage }) {
 
   const toggleOpenCv = () => {
     console.log("clic cv");
-    const pdfUrl = "/pdf/cv.pdf";
+    const pdfUrl = "/Mon-Portefolio/pdf/cv.pdf";
     window.open(pdfUrl, "_blank");
   };
 

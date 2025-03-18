@@ -12,7 +12,7 @@ export const Langue = () => {
         <div className="m-auto w-100 gap-4">
           <div className="language mt-2">
             <div className="d-flex gap-4">
-              <label className="section fs-6 bg-warning-subtle d-inline-block">
+              <label className="section fs-6 bg-danger-subtle d-inline-block">
                 Français
               </label>
               <div className="progress-bar">
@@ -35,7 +35,7 @@ export const Langue = () => {
           </div>
           <div className="language">
             <div className="d-flex gap-4">
-              <label className="section fs-6 bg-warning-subtle d-inline-block">
+              <label className="section fs-6 bg-danger-subtle d-inline-block">
                 Anglais
               </label>
               <div className="progress-bar">

@@ -15,12 +15,10 @@ function App() {
       <NavBar setNamePage={setNamePage} namePage={namePage} />
 
       <div className="main-content d-flex">
-        {/* Section droite : le composant Face */}
         <div className="right-section">
           <Face />
         </div>
 
-        {/* Section gauche : le composant Variation qui varie */}
         <div
           className="left-section d-flex align-items-center justify-content-center"
           style={{

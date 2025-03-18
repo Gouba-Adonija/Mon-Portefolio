@@ -18,7 +18,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-warning-subtle d-inline-block"
+                className="section fs-6 bg-danger-subtle d-inline-block"
               >
                 2022 - 2023
               </span>
@@ -39,7 +39,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-warning-subtle d-inline-block"
+                className="section fs-6 bg-danger-subtle d-inline-block"
               >
                 2021 - 2022
               </span>
@@ -60,7 +60,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-warning-subtle d-inline-block"
+                className="section fs-6 bg-danger-subtle d-inline-block"
               >
                 2020 - 2021
               </span>
@@ -79,7 +79,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-warning-subtle d-inline-block"
+                className="section fs-6 bg-danger-subtle d-inline-block"
               >
                 2018 - 2019
               </span>

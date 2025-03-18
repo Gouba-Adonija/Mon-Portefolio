@@ -1,4 +1,5 @@
 import profilImage from "../assets/image1.jpg";
+import "./face.css";
 export function Face() {
   return (
     <div className="container h-100 d-flex flex-column justify-content-center align-items-center text-white bg-dark p-4 rounded shadow-lg">
@@ -26,21 +27,21 @@ export function Face() {
             {"     "}0594782389
           </a>
         </p>
-        <p className="d-flex mb-1">
+        <p className="d-flex">
           <a href="mailto:goubaadonijaezeckias@gmail.com">
             <i className="fa-regular fa-envelope"></i>
             {"     "}
             goubaadonijaezeckias@gmail.com
           </a>
         </p>
-        <p className="d-flex mb-1">
+        <p className="d-flex">
           <a href="https://www.linkedin.com/in/adonija-ezeckias-gouba-7818a1259/">
             <i className="fa-brands fa-linkedin"></i>
             {"     "}
             linkedin.com/in/adonija-ezeckias-gouba-7818a1259
           </a>
         </p>
-        <p className="d-flex mb-1">
+        <p className="d-flex">
           <a href="https://github.com/gouba-adonija">
             <i className="fa-brands fa-github"></i>
             {"     "} github.com/gouba-adonija
