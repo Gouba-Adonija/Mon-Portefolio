@@ -1,6 +1,6 @@
 export function Competences() {
   return (
-    <div className="fs-4 w-100 d-flex justify-content-center align-items-center flex-column gap-2">
+    <div className="fs-4 w-100 d-flex justify-content-center align-items-center flex-column gap-2 ml-5">
       <span className="titre">
         <h4 className="">Mes compétences informatique</h4>
       </span>

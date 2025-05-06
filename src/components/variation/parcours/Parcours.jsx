@@ -23,10 +23,10 @@ export function Parcours() {
                 2022 - 2023
               </span>
               <div className="ms-4">
-                <span className="my-4 ">
+                <span className="my-4" style={{ fontSize: "15px" }}>
                   Brevet de Technicien Supérieur 2ème année
                 </span>
-                <p className="my-2" style={{ fontSize: "15px" }}>
+                <p className="my-2 ml-6" style={{ fontSize: "15px" }}>
                   Institut Famah de Vridi
                 </p>
               </div>

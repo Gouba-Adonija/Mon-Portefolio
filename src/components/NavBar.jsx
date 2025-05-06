@@ -123,7 +123,7 @@ export function Variation({ namePage }) {
         // layout
         transition={{
           delay: 0.2,
-          duration: 1.5,
+          duration: 1.3,
           ease: "easeOut",
         }}
         style={{
