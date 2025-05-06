@@ -2,6 +2,81 @@ p a {
   font-size: 17px;
 }
 a:hover {
-  color: #ff6f61;
+  color: #ffeb3b;
   /* scale: calc(20px); ??? */
+}
+
+.contact-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #1a1a1a; /* Fond sombre pour l'élément contenant */
+  padding: 7px;
+  border-radius: 8px;
+  margin: 1.6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Appliquer l'animation sur les icônes au survol */
+.contact-link:hover i {
+  animation: vibration 0.3s ease-in-out;
+  /* animation-iteration-count: infinite; */
+}
+
+.contact-link:hover {
+  background-color: #2a2a2a; /* Couleur de fond plus claire au survol */
+}
+
+.contact-info {
+  position: absolute;
+  top: -45px;
+  left: -55px;
+  background-color: #3498db; /* Fond bleu pour le texte pop-up */
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: none; /* Masquer le texte par défaut */
+  white-space: nowrap;
+  font-size: 14px;
+  z-index: 10;
+  transform: translateY(
+    100px
+  ); /* Initialement décalé vers le bas pour l'animation */
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.contact-link:hover .contact-info {
+  display: block;
+  transform: translateY(0) !important;
+  opacity: 1;
+}
+
+.contact-link i {
+  font-size: 16px; /* Ajuster la taille des icônes */
+  color: #3498db; /* Couleur bleue des icônes */
+  transition: color 1s ease; /* Transition de couleur pour les icônes */
+}
+
+.contact-link:hover i {
+  color: #ffffff;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(3px);
+  }
+
+  70% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

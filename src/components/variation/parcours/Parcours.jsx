@@ -2,11 +2,11 @@
 
 export function Parcours() {
   return (
-    <div className="parcours w-100 d-flex justify-content-start align-items-center flex-column gap-2">
+    <div className="parcours w-100 d-flex justify-content-start align-items-center flex-column p-2 ps-5 gap-2">
       <div className="titre">
         <h4 className="">Mon parcours scolaire</h4>
       </div>
-      <div className="d-flex align-items-center w-100 gap-3">
+      <div className="d-flex align-items-center w-100 gap-3 texte">
         {/* <div className="image-container p-4" style={{ width: "30%" }}>
           <img src={illustr} alt="skills" className="image" />
         </div> */}
@@ -18,7 +18,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-danger-subtle d-inline-block"
+                className="section fs-6 bg-third d-inline-block"
               >
                 2022 - 2023
               </span>
@@ -39,7 +39,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-danger-subtle d-inline-block"
+                className="section fs-6 bg-third d-inline-block"
               >
                 2021 - 2022
               </span>
@@ -60,7 +60,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-danger-subtle d-inline-block"
+                className="section fs-6 bg-third d-inline-block"
               >
                 2020 - 2021
               </span>
@@ -79,7 +79,7 @@ export function Parcours() {
                   padding: "7px 14px",
                   margin: "8px 0px",
                 }}
-                className="section fs-6 bg-danger-subtle d-inline-block"
+                className="section fs-6 bg-third d-inline-block"
               >
                 2018 - 2019
               </span>

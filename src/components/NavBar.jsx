@@ -19,34 +19,40 @@ export function NavBar({ setNamePage, namePage }) {
 
   return (
     <motion.nav
-      className="w-100 navbar navbar-expand-lg navbar-dark"
-      initial={{ opacity: 0, y: -50 }}
+      className="navbar navbar-expand-lg navbar-dark bg-dark"
+      initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 1.5 }}
     >
-      <div className="w-100 d-flex justify-content-between mx-4">
-        <button className="navbar-brand" onClick={toggleOpenCv}>
+      <div className="container-fluid">
+        <button className="navbar-brand my-third" onClick={toggleOpenCv}>
           Mon CV
         </button>
-        <div>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-            <motion.li
-              className={`nav-item ${namePage === "resume" ? "actived" : ""}`}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
+        {/* Bouton de toggler pour la version mobile */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Menu déroulant pour les petits écrans */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto gap-3">
+            <li className={`nav-item`}>
               <a
                 className={`nav-link ${namePage === "resume" ? "actived" : ""}`}
                 onClick={() => toggleNamePage("resume")}
               >
                 A propos
               </a>
-            </motion.li>
-            <motion.li
-              className={`nav-item ${namePage === "parcours" ? "actived" : ""}`}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
+            </li>
+            <li className={`nav-item`}>
               <a
                 className={`nav-link ${
                   namePage === "parcours" ? "actived" : ""
@@ -55,14 +61,8 @@ export function NavBar({ setNamePage, namePage }) {
               >
                 Parcours
               </a>
-            </motion.li>
-            <motion.li
-              className={`nav-item ${
-                namePage === "competences" ? "actived" : ""
-              }`}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
+            </li>
+            <li className={`nav-item `}>
               <a
                 className={`nav-link ${
                   namePage === "competences" ? "actived" : ""
@@ -71,19 +71,15 @@ export function NavBar({ setNamePage, namePage }) {
               >
                 Compétences
               </a>
-            </motion.li>
-            <motion.li
-              className={`nav-item ${namePage === "langue" ? "actived" : ""}`}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
+            </li>
+            <li className={`nav-item `}>
               <a
                 className={`nav-link ${namePage === "langue" ? "actived" : ""}`}
                 onClick={() => toggleNamePage("langue")}
               >
                 Langues
               </a>
-            </motion.li>
+            </li>
           </ul>
         </div>
       </div>
@@ -114,7 +110,7 @@ export function Variation({ namePage }) {
   return (
     <AnimatePresence>
       <motion.div
-        className="p-1  border border-dark shadow-lg"
+        className="px-2  border border-3 border-dark"
         key={namePage}
         initial={{
           opacity: 0,
@@ -126,12 +122,14 @@ export function Variation({ namePage }) {
         animate={{ opacity: 1, x: 0, y: 0, scale: 1, width: "100%" }}
         // layout
         transition={{
-          duration: 0.5,
+          delay: 0.2,
+          duration: 1.5,
           ease: "easeOut",
         }}
         style={{
           height: "100%",
-          overflowY: "auto",
+          width: "100%",
+          boxShadow: "1px 1px 15px 1px #2e2e2e",
         }}
       >
         <CurrentPage />
